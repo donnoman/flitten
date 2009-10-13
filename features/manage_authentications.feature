@@ -48,7 +48,7 @@ Feature: Manage sessions
     And I should be on sessions/new
     And I should be an unauthenticated user
 
-  Scenario: unathenticated user omits password
+  Scenario: unauthenticated user omits password
     Given I am on sessions/new
     And I am an unauthenticated user
     When I fill in the following:
