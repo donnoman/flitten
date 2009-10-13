@@ -7,11 +7,14 @@ module NavigationHelpers
   #
   def path_to(page_name)
     case page_name
-    
-    when /the home\s?page/
+    when /the root\s?page/
       '/'
-    when /the new authentication page/
-      new_authentication_path
+    when /the home\s?page/
+      '/home'
+    when /the new_user_session\s?page/
+      new_user_session_path
+    when /the user_session\s?page/
+      user_session_path
 
     
     # Add more mappings here.

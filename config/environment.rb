@@ -26,6 +26,7 @@ Rails::Initializer.run do |config|
   config.gem "webrat", :version => '0.5.3'
   config.gem "cucumber", :version => '0.4.2'
   config.gem "spork" , :version => '0.7.3'
+  config.gem "authlogic", :version => '2.1.2'
   
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

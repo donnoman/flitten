@@ -5,6 +5,7 @@
 
 require 'rubygems'
 require 'spork'
+require 'ruby-debug' #http://technicalpickles.com/posts/debugging-cucumber/
  
 Spork.prefork do
   # Sets up the Rails environment for Cucumber
@@ -53,3 +54,5 @@ Spork.each_run do
   # of your scenarions, as this makes it hard to discover errors in your application.
   ActionController::Base.allow_rescue = false
 end
+
+
