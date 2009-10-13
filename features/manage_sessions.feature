@@ -46,7 +46,7 @@ Feature: Manage user_session
     Then I should see "Password is not valid"
     And I should be on the user_session page
 
-  Scenario: unathenticated user omits username
+  Scenario: unauthenticated user omits username
     Given I am an unauthenticated user
     And I am on the new_user_session page
     When I fill in the following:
