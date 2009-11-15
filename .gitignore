@@ -1,5 +1,6 @@
 nbproject
-vendor/gems/gems
-vendor/gems/specifications
-vendor/gems/doc
-vendor/gems/environment.rb
+bin
+vendor/bundler_gems/gems
+vendor/bundler_gems/specifications
+vendor/bundler_gems/doc
+vendor/bundler_gems/environment.rb
