@@ -10,13 +10,13 @@ Feature: Manage user_session
       | user_session[login]     | admin      |
       | user_session[password]  | test-admin |
     And I press "Login"
-    Then I should see "Welcome, Test Admin"
+    Then I should see "Welcome, Admin"
     And I should be on the home page
 
   Scenario: authenticated user attempts to logout
     Given I am an authenticated user
     And I am on the root page
-    Then I should see "Welcome, Test Admin"
+    Then I should see "Welcome, Admin"
     When I follow "Logout"
     Then I should be on the root page
     And I should not see "Logout"
@@ -67,7 +67,7 @@ Feature: Manage user_session
   Scenario: authenticated user attempts to logout
     Given I am an authenticated user
     And I am on the root page
-    Then I should see "Welcome, Test Admin"
+    Then I should see "Welcome, Admin"
     When I follow "Logout"
     Then I should be on the root page
     And I should not see "Logout"

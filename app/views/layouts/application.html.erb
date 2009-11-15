@@ -4,7 +4,7 @@
   <head><title>Flitten</title></head>
   <body>
     <div id="header">
-      <span id="welcome">Welcome<%= current_user.nil? ? '.' : ", #{current_user[:first_name]} #{current_user[:last_name]}" %></span>
+      <span id="welcome">Welcome<%= current_user.nil? ? '.' : ", #{current_user[:login].capitalize}" %></span>
       <span id="link_bar">
         <%  if current_user.nil? %>
           <%= link_to("Login", new_user_session_path) %>
