@@ -7,13 +7,13 @@ bundle_path "vendor/bundler_gems"
 # Sources
 clear_sources
 source "http://gemcutter.org"
-source "http://gems.rubyforge.org/"
 source "http://gems.github.com"
 
 # Stack
 gem "rails", "2.3.4"
 gem "rack", "1.0.0"
 gem "unicorn", "0.93.3"
+gem "mysql", "2.8.1"
 
 # Application
 gem "authlogic", :version => '2.1.2'
